@@ -1,4 +1,13 @@
-•  What is a gitignore file and what should it include for a Java project? 
+•  What is a gitignore file and what should it include for a Java project?
+A gitignore file is a git file that ignores and does not track changes in a set of files that are mentioned in the .gitignore. Developers include the files that are built during runtime, the files that contain sensitive information, or some heavy files that don't need to be included everytime you upload the files.
+
+For a Java project, some common files to be included are: Compiled Class Files, Jar Files, Log Files, IDE Files, etc.
+
 •  What does fast-forward in git mean? 
-•  Why should you have different branches? 
-•  In a project how many remote Git repositories do you usually have? 
+Fast forwarding is a merge strategy in git that occurs when your commit is to be merged to the master branch without the master branch being modified since the current branch was created. Fast-forwarding moves the pointer of the master branch to the end of the current branch and keeps all the changes there. This strategy is very simple and efficient but it doesn't keep track of all the merge.
+
+•  Why should you have different branches?
+Git allows to have different branches and because of that the version control becomes an easy process. Multiple contributors can work simultaneously on the different features of the project with different branches. The concept of different branches makes project management more efficient and easy maintenance reducing the risk of conflicts and errors. In addition to this, different branches allow to experiment with the new features independently and test the bug fixes.
+
+•  In a project how many remote Git repositories do you usually have?
+There is not a fixed number of remote Git repositories an individual or team can have. The number of remote Git repositories depends on a size of a project or requirements. Usually, small project teams have single remote Git repositories which are sufficient, whereas some big projects might need more than one Git repositories according to the magnitude of the project or requirements.
